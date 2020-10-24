@@ -19,7 +19,7 @@ const orderSchema = mongoose.Schema({
             },
         }
     ],
-    passhippingAddress: {
+    shippingAddress: {
         address: { type: String, required: true},
         city: { type: String, required: true},
         postalCode: { type: String, required: true},
@@ -68,6 +68,7 @@ const orderSchema = mongoose.Schema({
     },
     trackingInfo: {
         type: String
+        
     }
 }, {
     timestamps: true
